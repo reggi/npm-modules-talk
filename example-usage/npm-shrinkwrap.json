@@ -1,0 +1,11 @@
+{
+  "name": "example-usage",
+  "version": "1.0.0",
+  "dependencies": {
+    "npm-modules-talk": {
+      "version": "1.0.0",
+      "from": "npm-modules-talk@latest",
+      "resolved": "http://localhost:4873/npm-modules-talk/-/npm-modules-talk-1.0.0.tgz"
+    }
+  }
+}

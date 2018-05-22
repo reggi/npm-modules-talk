@@ -1,0 +1,16 @@
+storage: ../storage
+auth:
+  htpasswd:
+    file: ./htpasswd
+    max_users: 1
+publish:
+  allow_offline: true
+packages:
+  '@*/*':
+    access: $all
+    publish: $all
+  '**':
+    access: $all
+    publish: $all
+logs:
+  - {type: stdout, format: pretty, level: http}

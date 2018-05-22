@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='light'>
+  <div><p>npm modules</p>
+</div>
+<div><p><strong>me</strong></p>
+<ul>
+<li>Thomas Reggi</li>
+<li>amex developer for ~1 year</li>
+<li><a href="mailto:thomas@reggi.com">thomas@reggi.com</a></li>
+<li><code>@reggi</code> on github</li>
+<li><code>@thomasreggi</code> on twitter</li>
+</ul>
+</div>
+<div><p>why?</p>
+</div>
+<div><ol>
+<li>reusable <ul>
+<li><code>npm i my-mod</code></li>
+</ul>
+</li>
+<li>versioned (semver)<ul>
+<li><code>1.0.0</code> -&gt; <code>1.0.1</code></li>
+</ul>
+</li>
+</ol>
+</div>
+<div><p>reuse as much as possibe</p>
+<ul>
+<li>un-exported functions</li>
+<li>functions wrapped in closures</li>
+<li>functions depending on globals</li>
+<li>functions depending on this context</li>
+</ul>
+</div>
+<div><p><img src="./gifs/minimist-example.png" alt="minimist example"></p>
+</div>
+<div><p>how?</p>
+</div>
+<div><p><strong>Files!</strong></p>
+<ol>
+<li><code>package.json</code></li>
+<li><code>index.js</code></li>
+</ol>
+</div>
+<div><p><strong><code>package.json</code></strong></p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;thomas-reggi-npm-talk&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;main&quot;: &quot;index.js&quot;
+}
+</code></pre>
+</div>
+<div><p><strong><code>main.js</code></strong></p>
+<pre><code class="lang-js">module.exports = &quot;Hello world&quot;
+</code></pre>
+</div>
+<div><p>now what?</p>
+</div>
+<div><p>publishing!</p>
+</div>
+<div><ol start="0">
+<li>About registries</li>
+<li><code>npm login</code></li>
+<li><code>npm publish</code></li>
+</ol>
+</div>
+<div><p><img src="./gifs/verdaccio-home.png" alt="verdaccio"></p>
+</div>
+<div><p><strong>registry flag</strong></p>
+<p>flag:</p>
+<ul>
+<li><code>npm login --registry (registry-url)</code></li>
+<li><code>npm publish --registry (registry-url)</code></li>
+<li><code>npm set registry http://localhost:4873</code></li>
+</ul>
+<p>examples:</p>
+<ul>
+<li><a href="https://registry.npmjs.org/">https://registry.npmjs.org/</a></li>
+<li><a href="https://registry.reggi.com/">https://registry.reggi.com/</a> (proxy)</li>
+<li><a href="http://localhost:4873/">http://localhost:4873/</a> (proxy)</li>
+</ul>
+</div>
+<div><p><strong>npm login</strong></p>
+<pre><code>npm login --registry http://localhost:4873
+</code></pre></div>
+<div><p><strong>npm publish</strong></p>
+<pre><code class="lang-bash">npm publish --registry http://localhost:4873/
+</code></pre>
+<p><img src="./gifs/npm-publish.gif" alt="npm publish"></p>
+</div>
+<div><p>using the <code>npm view</code> command</p>
+</div>
+<div><p><strong>npm view</strong></p>
+<pre><code class="lang-bash">npm view npm-modules-talk --registry http://localhost:4873/
+</code></pre>
+<p><img src="./gifs/npm-view.gif" alt="npm view"></p>
+</div>
+<div><p><strong>npm view version</strong></p>
+<pre><code class="lang-bash">npm view npm-modules-talk version --registry http://localhost:4873/
+</code></pre>
+<p><img src="./gifs/npm-view-version.gif" alt="npm view"></p>
+</div>
+<div><p><img src="./gifs/party.png" alt="party"></p>
+</div>
+<div><pre><code class="lang-bash">npm install npm-modules-talk --registry http://localhost:4873/
+</code></pre>
+<hr>
+
+<pre><code class="lang-js">const winning = require(&#39;npm-modules-talk&#39;)
+console.log(winning)
+</code></pre>
+<hr>
+
+<pre><code class="lang-js">node index.js
+</code></pre>
+</div>
+<div><p><img src="./gifs/results.gif" alt="results"></p>
+</div>
+<div><p>my dream:</p>
+<ul>
+<li>everything I write to be reusable</li>
+<li>&quot;complete library of every piece of code I write&quot;</li>
+</ul>
+</div>
+<div><p><code>monorepo</code></p>
+</div>
+<div><p>Lerna</p>
+<p><img src="./gifs/lerna-home.png" alt="lerna"></p>
+</div>
+<div><p><img src="./gifs/monorepo-packages.png" alt="monorepo-packages"></p>
+</div>
+<div><p><img src="./gifs/monorepo-example.png" alt="monorepo-example"></p>
+</div>
+<div><p>the end</p>
+</div>
+</body>
+</html>

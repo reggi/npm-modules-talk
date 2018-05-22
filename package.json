@@ -1,0 +1,14 @@
+{
+  "name": "@reggi/npm-modules-talk",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "cd ./presentation && big-presentation-serve",
+    "watch": "cd ./presentation && nodemon --exec big-presentation-compose --watch ./ -e md",
+    "start": "run-p watch serve"
+  },
+  "dependencies": {
+    "big-presentation": "^3.2.3",
+    "nodemon": "^1.17.4",
+    "npm-run-all": "^4.1.3"
+  }
+}

@@ -1,0 +1,79 @@
+{
+	"name": "npm-modules-talk",
+	"versions": {
+		"1.0.0": {
+			"name": "npm-modules-talk",
+			"version": "1.0.0",
+			"main": "index.js",
+			"_id": "npm-modules-talk@1.0.0",
+			"scripts": {},
+			"_shasum": "d4ae78733ed86fe4699cc65e78fadae7c37b61d1",
+			"_from": ".",
+			"_npmVersion": "3.10.8",
+			"_nodeVersion": "6.8.0",
+			"_npmUser": {},
+			"dist": {
+				"shasum": "d4ae78733ed86fe4699cc65e78fadae7c37b61d1",
+				"tarball": "http://localhost:4873/npm-modules-talk/-/npm-modules-talk-1.0.0.tgz"
+			}
+		},
+		"1.0.1": {
+			"name": "npm-modules-talk",
+			"version": "1.0.1",
+			"main": "index.js",
+			"_id": "npm-modules-talk@1.0.1",
+			"scripts": {},
+			"_shasum": "92f5eb8b2dd14d59b95bfcd29de5c08f910f5b54",
+			"_from": ".",
+			"_npmVersion": "3.10.8",
+			"_nodeVersion": "6.8.0",
+			"_npmUser": {},
+			"dist": {
+				"shasum": "92f5eb8b2dd14d59b95bfcd29de5c08f910f5b54",
+				"tarball": "http://localhost:4873/npm-modules-talk/-/npm-modules-talk-1.0.1.tgz"
+			}
+		},
+		"1.0.2": {
+			"name": "npm-modules-talk",
+			"version": "1.0.2",
+			"main": "index.js",
+			"_id": "npm-modules-talk@1.0.2",
+			"_npmVersion": "6.0.1",
+			"_nodeVersion": "10.1.0",
+			"_npmUser": {},
+			"dist": {
+				"integrity": "sha512-G6t2hNyV7IUrL7cb6H1jSbtbBenbfvtBkdBMFBf8jXaepOFLuUl79P6FXPJE7cymS2WeSXs/agHkJI/bKcxyoQ==",
+				"shasum": "d6cc9b0021b80e4e538ebfe770d282fd90cf4f81",
+				"tarball": "http://localhost:4873/npm-modules-talk/-/npm-modules-talk-1.0.2.tgz"
+			}
+		}
+	},
+	"dist-tags": {
+		"latest": "1.0.2"
+	},
+	"time": {
+		"modified": "2018-05-22T20:17:56.906Z",
+		"created": "2018-05-22T19:58:23.955Z",
+		"1.0.0": "2018-05-22T19:58:23.955Z",
+		"1.0.1": "2018-05-22T20:14:37.578Z",
+		"1.0.2": "2018-05-22T20:17:56.906Z"
+	},
+	"_distfiles": {},
+	"_attachments": {
+		"npm-modules-talk-1.0.0.tgz": {
+			"shasum": "d4ae78733ed86fe4699cc65e78fadae7c37b61d1",
+			"version": "1.0.0"
+		},
+		"npm-modules-talk-1.0.1.tgz": {
+			"shasum": "92f5eb8b2dd14d59b95bfcd29de5c08f910f5b54",
+			"version": "1.0.1"
+		},
+		"npm-modules-talk-1.0.2.tgz": {
+			"shasum": "d6cc9b0021b80e4e538ebfe770d282fd90cf4f81",
+			"version": "1.0.2"
+		}
+	},
+	"_uplinks": {},
+	"_rev": "21-6e81dc6b070c5991",
+	"readme": "ERROR: No README data found!"
+}
