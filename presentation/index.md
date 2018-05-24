@@ -5,14 +5,28 @@ npm modules
 __me__
 
 * Thomas Reggi
-* amex developer for ~1 year
 * thomas@reggi.com
+* Amex developer for ~1 year
 * `@reggi` on github
 * `@thomasreggi` on twitter
 
 ---
 
-why?
+![holstee](./gifs/job-holstee.png)
+
+---
+
+![inrhythm](./gifs/job-inrhythm.png)
+
+---
+
+![american-express](./gifs/job-amex.png)
+
+---
+
+<br><br>
+why bother creating node modules?
+<br><br>
 
 ---
 
@@ -20,6 +34,13 @@ why?
   * `npm i my-mod`
 2. versioned (semver)
   * `1.0.0` -> `1.0.1`
+
+---
+
+my dream:
+
+* everything I write to be reusable
+* "complete library of every piece of code I write"
 
 ---
 
@@ -32,11 +53,21 @@ reuse as much as possibe
 
 ---
 
+un-exported functions 😩
+
 ![minimist example](./gifs/minimist-example.png)
 
 ---
 
-how?
+this everywhere 🚀
+
+![git this](./gifs/git-this.png)
+
+---
+
+<br><br>
+how do we create a node module?
+<br><br>
 
 ---
 
@@ -119,6 +150,13 @@ npm publish --registry http://localhost:4873/
 
 ---
 
+now that it's publshed what...
+
+1. Check it's available `npm view`
+2. Check if it's `requireable`
+
+---
+
 using the `npm view` command
 
 ---
@@ -147,6 +185,34 @@ npm view npm-modules-talk version --registry http://localhost:4873/
 
 ---
 
+nope
+
+![kanye](./gifs/kanye-no.gif)
+
+---
+
+__check our work__
+
+
+```bash
+mkdir check-our-work
+```
+
+<hr>
+
+```bash
+cd check-our-work
+touch index.js
+```
+
+<hr>
+
+```bash
+npm init -y
+```
+
+<hr>
+
 ```bash
 npm install npm-modules-talk --registry http://localhost:4873/
 ```
@@ -155,7 +221,7 @@ npm install npm-modules-talk --registry http://localhost:4873/
 
 ```js
 const winning = require('npm-modules-talk')
-console.log(winning)
+console.log(winning) // should log "Hello world"
 ```
 
 <hr>
@@ -166,34 +232,140 @@ node index.js
 
 ---
 
+running the node file that uses the node module
+
+```bash
+node ./index.js
+```
+
 ![results](./gifs/results.gif)
 
 ---
 
-my dream:
-
-* everything I write to be reusable
-* "complete library of every piece of code I write"
-
----
-
-`monorepo`
+<br><br>
+pro tips 💅
+<br><br>
 
 ---
 
-Lerna
+1. `.npmignore`
+2. `monorepo`
+3. private registries
+
+---
+
+What is `.npmignore`?
+
+---
+
+Just like `.gitignore` but for `npm`.
+
+```
+__snapshots__
+coverage
+screenshots
+examples
+index.js
+index.test.js
+test.js
+.pkgrc
+.gitignore
+example
+package-local.json
+node_modules
+```
+
+---
+
+Tar without ignore:
+
+![module-without-ignore.png](./gifs/module-without-ignore.png)
+
+---
+
+Tar with ignore:
+
+![module-with-ignore.png](./gifs/module-with-ignore.png)
+
+---
+
+What is a monorepo?
+
+---
+
+Everybody loves dragons.
 
 ![lerna](./gifs/lerna-home.png)
-
 ---
+
+single repo many packages
 
 ![monorepo-packages](./gifs/monorepo-packages.png)
 
 ---
 
+each module is small
+
 ![monorepo-example](./gifs/monorepo-example.png)
 
 ---
 
-the end
+consume your own modules
 
+![lerna-example](./gifs/lerna-example.png)
+
+---
+
+What is a private registry?
+
+---
+
+issues happen, centralization 🌋🔒😿
+
+![npm-issue](./gifs/npm-issue.png)
+
+---
+
+have a backup.
+
+![reggi-registry](./gifs/reggi-registry.png)
+
+---
+
+have no fear
+
+---
+
+story time
+
+---
+
+my first node module
+
+![npm-scheme](./gifs/npm-scheme.png)
+
+---
+
+what it did, was dumb
+
+![node-url](./gifs/node-url.png)
+
+---
+
+how it did it, was even dumber
+
+![npm-scheme-deps](./gifs/npm-scheme-deps.png)
+
+---
+
+php?
+
+![github-scheme](./gifs/github-scheme.png)
+
+---
+
+so don't worry! don't fear the `npm publish` command
+
+---
+
+the end
