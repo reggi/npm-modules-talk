@@ -16,11 +16,13 @@
 <body class='light'>
   <div><p>npm modules</p>
 </div>
-<div><p><strong>me</strong></p>
+<div><p><a href="https://github.com/reggi/npm-modules-talk">https://github.com/reggi/npm-modules-talk</a></p>
+</div>
+<div><center>
+Thomas Reggi
+</center>
+
 <ul>
-<li>Thomas Reggi</li>
-<li><a href="mailto:thomas@reggi.com">thomas@reggi.com</a></li>
-<li>Amex developer for ~1 year</li>
 <li><code>@reggi</code> on github</li>
 <li><code>@thomasreggi</code> on twitter</li>
 </ul>
@@ -78,9 +80,20 @@ how do we create a node module?
 </div>
 <div><p><strong><code>package.json</code></strong></p>
 <pre><code class="lang-json">{
-  &quot;name&quot;: &quot;thomas-reggi-npm-talk&quot;,
+  &quot;name&quot;: &quot;node-modules-talk&quot;,
   &quot;version&quot;: &quot;1.0.0&quot;,
   &quot;main&quot;: &quot;index.js&quot;
+}
+</code></pre>
+</div>
+<div><p><strong><code>package.json</code> with scope</strong></p>
+<pre><code class="lang-json">{
+  &quot;name&quot;: &quot;@reggi/node-modules-talk&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;publishConfig&quot;: {
+    &quot;access&quot;: &quot;public&quot;
+  }
 }
 </code></pre>
 </div>
@@ -249,6 +262,10 @@ node_modules
 <div><p>so don&#39;t worry! don&#39;t fear the <code>npm publish</code> command</p>
 </div>
 <div><p>the end</p>
+</div>
+<div><p><a href="https://github.com/reggi/npm-modules-talk">https://github.com/reggi/npm-modules-talk</a>
+<br>
+Thomas Reggi</p>
 </div>
 </body>
 </html>

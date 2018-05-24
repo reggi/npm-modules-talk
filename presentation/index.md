@@ -2,11 +2,13 @@ npm modules
 
 ---
 
-__me__
+https://github.com/reggi/npm-modules-talk
 
-* Thomas Reggi
-* thomas@reggi.com
-* Amex developer for ~1 year
+---
+<center>
+Thomas Reggi
+</center>
+
 * `@reggi` on github
 * `@thomasreggi` on twitter
 
@@ -82,9 +84,24 @@ __`package.json`__
 
 ```json
 {
-  "name": "thomas-reggi-npm-talk",
+  "name": "node-modules-talk",
   "version": "1.0.0",
   "main": "index.js"
+}
+```
+
+---
+
+__`package.json` with scope__
+
+```json
+{
+  "name": "@reggi/node-modules-talk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  }
 }
 ```
 
@@ -369,3 +386,10 @@ so don't worry! don't fear the `npm publish` command
 ---
 
 the end
+
+---
+
+https://github.com/reggi/npm-modules-talk
+<br>
+Thomas Reggi
+
