@@ -14,15 +14,7 @@ Thomas Reggi
 
 ---
 
-![holstee](./gifs/job-holstee.png)
-
----
-
-![inrhythm](./gifs/job-inrhythm.png)
-
----
-
-![american-express](./gifs/job-amex.png)
+![work](./gifs/work.png)
 
 ---
 
@@ -267,7 +259,8 @@ pro tips 💅
 
 1. `.npmignore`
 2. `monorepo`
-3. private registries
+3. jenkins
+4. private registries
 
 ---
 
@@ -313,6 +306,7 @@ What is a monorepo?
 Everybody loves dragons.
 
 ![lerna](./gifs/lerna-home.png)
+
 ---
 
 single repo many packages
@@ -330,6 +324,21 @@ each module is small
 consume your own modules
 
 ![lerna-example](./gifs/lerna-example.png)
+
+---
+
+jenkins is your friend
+
+![jenkins](./gifs/jenkins.png)
+
+---
+
+run on jenkins
+
+* `depcheck`
+* `standard`
+* `tests` (with 100% coverage)
+* `publish`
 
 ---
 
@@ -392,4 +401,3 @@ the end
 https://github.com/reggi/npm-modules-talk
 <br>
 Thomas Reggi
-
